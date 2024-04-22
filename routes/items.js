@@ -4,15 +4,15 @@ const { partners } = require('../models/index');
 
 
 // Rota para criar um novo parceiro
-// router.post('/createPartnears', async (req, res) => {
-//     try {
-//         const { nome, email, telefone,mensagem } = req.body;
-//         await partners.create({ nome, email, telefone,mensagem });
-//         res.send('Partner salvo com sucesso');
-//     } catch (err) {
-//         res.status(400).json({ message: err.message });
-//     }
-// });
+router.post('/partnears', async (req, res) => {
+    try {
+        const { nome, email, telefone,mensagem } = req.body;
+        await partners.create({ nome, email, telefone,mensagem });
+        res.send('Partner salvo com sucesso');
+    } catch (err) {
+        res.status(400).json({ message: err.message });
+    }
+});
 
 // Rota para obter todos os parceiros
 router.get('/', async (req, res) => {

@@ -227,7 +227,7 @@
       };
 
       // Realize uma requisição HTTP POST para a rota '/createPartnears'
-      fetch('/createPartnears', {
+      fetch('/partnears', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -239,10 +239,7 @@
         if (response.ok) {
           // Se a resposta for bem-sucedida, exiba uma mensagem de sucesso
           alert('Partner salvo com sucesso');
-          nome="";
-        telefone="";
-        email="";
-        mensagem=""
+    
 
         } else {
           // Se houver um erro na resposta, exiba uma mensagem de erro
